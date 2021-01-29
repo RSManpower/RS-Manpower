@@ -1,4 +1,5 @@
 
+
 --------------------------
 body, html {
 	font-family: 'Open Sans', sans-serif;
@@ -37,7 +38,7 @@ p {
 }
 a {
     
-	color: #FC4445;
+	color: #ffffff;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -88,6 +89,12 @@ hr {
 	font-size: 22px;
 	color: #000000;
 	font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  #menu.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+  }
 }
 #menu a.navbar-br i.fa {
 	color: #000000;
@@ -95,8 +102,9 @@ hr {
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #000000;
-	font-size: 12px;
+	font-size: 16px;
 	letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #71bd46;
@@ -214,13 +222,14 @@ header p {
     background-color: Transparent;
     border: None;
     color: #000000;
+    font-size: 16px;
     padding-top: 1em;
 }
 .btn:hover{
     color: #71bd46;
 }
 .dropdown-menu{
-  background-color:#e2e5de;
+  background-color:#a6bed9;
     font-size: 1.2em;
 }
 .dropdown-item:hover{
@@ -599,4 +608,5 @@ label {
 	padding: 15% 10%;
 }
 }
+
 
