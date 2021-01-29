@@ -1,5 +1,6 @@
 
 
+
 --------------------------
 body, html {
 	font-family: 'Open Sans', sans-serif;
@@ -105,6 +106,11 @@ hr {
 	font-size: 16px;
 	letter-spacing: 1px;
     font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  #menu.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+  }
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #71bd46;
@@ -224,6 +230,11 @@ header p {
     color: #000000;
     font-size: 16px;
     padding-top: 1em;
+}
+@media only screen and (max-width: 600px) {
+  #menu.navbar-default .navbar-nav .btn{
+    color: #ffffff;
+  }
 }
 .btn:hover{
     color: #71bd46;
@@ -555,6 +566,31 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
 /* Social Section */
 #social-section {
 	padding: 30px 0;
@@ -608,5 +644,6 @@ label {
 	padding: 15% 10%;
 }
 }
+
 
 
