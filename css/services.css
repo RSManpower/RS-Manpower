@@ -1,5 +1,4 @@
 
-
 --------------------------
 body, html {
 	font-family: 'Open Sans', sans-serif;
@@ -224,6 +223,11 @@ header p {
     font-size: 16px;
     color: #000000;
     padding-top: 1em;
+}
+@media only screen and (max-width: 600px) {
+  #menu.navbar-default .navbar-nav .btn{
+    color: #ffffff;
+  }
 }
 .btn:hover{
     color: #71bd46;
@@ -557,6 +561,31 @@ label {
 a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
 	outline: none;
 	outline-offset: none;
+}
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
 }
 /* Social Section */
 #social-section {
