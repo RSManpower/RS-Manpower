@@ -1,4 +1,5 @@
 
+
 --------------------------
 body, html {
 	font-family: 'Open Sans', sans-serif;
@@ -37,7 +38,7 @@ p {
 }
 a {
     
-	color: #000000;
+	color: #ffffff;
 }
 #services-section a{
     
@@ -78,6 +79,31 @@ hr {
 	border: 0;
 	margin: 30px 0 0 0;
 }
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
 /* Navigation */
 #menu {
 	padding: 20px;
@@ -92,6 +118,7 @@ hr {
 	font-size: 22px;
 	color: #000000;
 	font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
 }
 #menu a.navbar-br i.fa {
 	color: #FC4445;
@@ -99,9 +126,14 @@ hr {
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #000000;
-	font-size: 12px;
+	font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
 	letter-spacing: 1px;
-    font font-weight: 500;
+    }
+@media only screen and (max-width: 600px) {
+  #menu.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+  }
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color: #71bd46;
@@ -176,7 +208,7 @@ header p {
 	font-weight: 700;
 }
 .btn-default {
-	color: #FC4445;
+	color: #ffffff;
 	font-family: 'Open Sans', sans-serif;
 	background-color: transparent;
 	border: 1px solid #71bd46;
@@ -186,7 +218,7 @@ header p {
 	transition: all 0.5s;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-	background-color: #71bd46;
+	background-color: #a6bed9;
 	border: 1px solid #71bd46;
 	color: #eeeeee;
 }
@@ -219,12 +251,19 @@ header p {
     border: None;
     color: #000000;
     padding-top: 1em;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  #menu.navbar-default .navbar-nav .btn{
+    color: #ffffff;
+  }
 }
 .btn:hover{
     color: #71bd46;
 }
 .dropdown-menu{
-  background-color:gainsboro;
+  background-color:#a6bed9;
     font-size: 1.2em;
 }
 .dropdown-item:hover{
@@ -318,15 +357,14 @@ header p {
 	display: inline-block;
 }
 thumbnail {
-  display: block;
+  display:contents;
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  border-radius: 0;
-  border: none;
   background-color: none;
+    border:0px;
 }
 
 .carousel-control {
@@ -603,4 +641,5 @@ label {
 	padding: 15% 10%;
 }
 }
+
 
